@@ -1,0 +1,39 @@
+.buttons {
+  display: grid;
+  gap: 5px;
+}
+.btn {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 85%;
+}
+.btn__login {
+  height: 38px;
+  width: 190px;
+  border-radius: 9px;
+  border: 0;
+  background-color: #ea5b0c;
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.btn__login--var {
+  border-style: solid;
+  background-color: white;
+  border-color: #1abbe7;
+  color: #1abbe7;
+  border-width: 1px;
+}
+.btn__hent {
+  width: 150px;
+  height: 35px;
+  background-color: #1abbe7;
+  border: 0;
+  color: white;
+}
+.btn__hent:visited {
+  border-style: solid;
+  background-color: white;
+  border-color: #1abbe7;
+  color: #1abbe7;
+  border-width: 1px;
+}
