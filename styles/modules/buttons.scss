@@ -1,5 +1,15 @@
 @import 'general/index.scss';
 
+.guide-link {
+  font-size: 13px;
+  background: none;
+  border: none;
+}
+
+.guide-link a {
+  color: $darkblue;
+}
+
 .btn {
     font-family: "Roboto", sans-serif;
     font-weight: bold;
