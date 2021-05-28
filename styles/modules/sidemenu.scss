@@ -1,4 +1,4 @@
-
+@import 'general/index.scss';
 
 .sidenav {
     height: 100%;
@@ -7,7 +7,7 @@
     top: 0;
     left: 0;
     z-index: 1;
-    background-color: $blue; 
+    background-color: $blue;
     overflow-x: hidden;
   }
   
