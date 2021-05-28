@@ -1,0 +1,91 @@
+@import 'general/index.scss';
+
+.btn {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    height: 38px;
+    width: 190px;
+    border-radius: 9px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
+
+    &__login {
+        border: 0;
+        background-color: $orange;
+        color: $white;
+      }
+
+      &__login--var {
+        border-style: solid;
+        background-color: $white;
+        border-color: $blue;
+        color: $blue;
+        border-width: 1px;
+      }
+  }
+
+  
+
+
+  .button--white {
+    background-color: white;
+      color: $orange;
+      padding: 15px 32px;
+      text-align: center;
+      display: inline-block;
+      font-size: 16px;
+      border: 2px solid $orange;
+    border-radius: 20px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
+    }
+
+
+    .smallWhiteButton {
+      background-color: $white;
+      color: $blue;
+      border: none;
+      border: 2px solid $blue;
+      width:200px;
+      border-radius: 20px;
+      padding: 5px;
+      box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
+
+      &--map {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        align-items: center;
+    }
+
+  &--phone {
+      display: grid;
+      grid-template-columns: 1fr 4fr;
+      align-items: center;
+  }
+
+  &__input {
+      width: 200px;
+      border:none;
+      color:#1abbe7;
+      margin-left: 10px;
+  }
+
+  &__number {
+      background-color: $blue;
+      color: $white;
+  }
+  }
+
+  .whiteTextButton {
+    background: none;
+    color: white;
+    border: none;
+    font-size: 20px;
+}
+
+  
+
+

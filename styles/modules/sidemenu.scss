@@ -1,0 +1,18 @@
+
+
+.sidenav {
+    height: 100%;
+    width: 80%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: $blue; 
+    overflow-x: hidden;
+  }
+  
+  .sidenav a {
+    font-size: 29px;
+    color: $white;
+    display: block;
+  }
