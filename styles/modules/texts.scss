@@ -3,11 +3,29 @@
 .bodytext {
     color: $darkblue;
     font-size: 18px;
+    margin: 20px;
+
+    &--orange {
+        color: $orange;
+    }
+
+    &--white {
+        color: $white;
+    }
 }
 
 .undertitle {
         color: $darkblue;
-        font-size: 24px;
+        font-size: 22px;
+        line-height: 0;
+
+    &--orange {
+        color: $orange;
+    }
+
+    &--white {
+        color: $white;
+    }
 }
 
 .title {
