@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,6 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
 
     <style>
-
         body {
             background-color: blueviolet;
         }
@@ -59,6 +59,7 @@
         }
     </style>
 </head>
+
 <body>
 
     <p class="openbutton">Hello!</p>
@@ -66,38 +67,39 @@
     <nav class="sidebar">
         <ul>
             <li class="sidebar__item"><i class="fas fa-box-open"></i> Mine Pakker</li>
-        <li class="sidebar__item"><i class="fas fa-truck-loading"></i> Send en pakke</li>
-        <li class="sidebar__item"><i class="fas fa-undo-alt"></i> Send pakke retur</li>
-        <li class="sidebar__item"><i class="fas fa-clipboard-list"></i> Historik</li>
-        <li class="sidebar__item"><i class="fas fa-question-circle"></i>Sådan bruges Nærboks </li>
-        <li class="sidebar__item"><i class="fas fa-phone"></i> Kontakt kundeservice</li>
-        <li class="sidebar__item"><i class="fas fa-cog"></i> Indstillinger</li>
-    </ul>
+            <li class="sidebar__item"><i class="fas fa-truck-loading"></i> Send en pakke</li>
+            <li class="sidebar__item"><i class="fas fa-undo-alt"></i> Send pakke retur</li>
+            <li class="sidebar__item"><i class="fas fa-clipboard-list"></i> Historik</li>
+            <li class="sidebar__item"><i class="fas fa-question-circle"></i>Sådan bruges Nærboks </li>
+            <li class="sidebar__item"><i class="fas fa-phone"></i> Kontakt kundeservice</li>
+            <li class="sidebar__item"><i class="fas fa-cog"></i> Indstillinger</li>
+        </ul>
     </nav>
-    
+
     <section id="closebutton" class="closebutton" onclick="closeNav()">
         <i class="fas fa-times"></i>
     </section>
 
-        <script>
-            const sidebar = document.querySelector(".sidebar");
-            const closebutton = document.querySelector(".closebutton");
-            const openbutton = document.querySelector(".openbutton");
+    <script>
+        const sidebar = document.querySelector(".sidebar");
+        const closebutton = document.querySelector(".closebutton");
+        const openbutton = document.querySelector(".openbutton");
 
-            console.log(sidebar);
-            console.log(openbutton);
+        console.log(sidebar);
+        console.log(openbutton);
 
-            
-            openbutton.addEventListener('click', () => {
-                    sidebar.classList.add('sidebar--open');
-                    closebutton.classList.add ('closebutton--open');
-                });
 
-            closebutton.addEventListener('click', () => {
-                sidebar.classList.remove('sidebar--open');
-                closebutton.classList.remove('closebutton--open');
-            });
-            
-        </script>
+        openbutton.addEventListener('click', () => {
+            sidebar.classList.add('sidebar--open');
+            closebutton.classList.add('closebutton--open');
+        });
+
+        closebutton.addEventListener('click', () => {
+            sidebar.classList.remove('sidebar--open');
+            closebutton.classList.remove('closebutton--open');
+        });
+
+    </script>
 </body>
+
 </html>

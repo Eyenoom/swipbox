@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,23 +8,25 @@
     <title>Slider</title>
 </head>
 <style>
-    html, body {
+    html,
+    body {
         box-sizing: border-box;
-        margin:0;
-       padding:0;
+        margin: 0;
+        padding: 0;
         height: 100%;
         width: 100%;
-       overflow: hidden;
+        overflow: hidden;
     }
-    
+
     .slider-container {
         height: 100vh;
         display: inline-flex;
-        overflow: hidden; 
+        overflow: hidden;
         transform: translateX(0);
         transition: transform 0.3s ease-out;
         cursor: grab;
     }
+
     .slide {
         max-height: 70vh;
         width: 80vw;
@@ -37,10 +40,10 @@
         user-select: none;
         color: white;
     }
+
     img {
         size: 50%;
     }
-
 </style>
 
 <body>
@@ -63,4 +66,5 @@
     </div>
     <script src="slider.js"></script>
 </body>
+
 </html>
