@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="styleguie.css">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href="#colors" class="menu__link">Colors</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#fonts" class="menu__link">Fonts</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#buttons" class="menu__link">Buttons</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#module" class="menu__link">Modules</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </header>
+    <section class="module" id="colors">
+        <h2 class="titlestyle">Colors</h2>
+    </section>
+    <section class="color --background">Background Color - #1ABBE7</section>
+    <section class="color --secondary">Secondary Color - #EA5B0C</section>
+    <section class="color --neutral">Neutral - #ffffff</section>
+    <section class="color --text">Text - #0D3151</section>
+    <section class="module" id="fonts">
+        <h2 class="titlestyle">Fonts & Texts</h2>
+    </section>
+    <h2 class="title">This is a title</h2>
+    <h3 class="undertitle">This is an undertitle</h3>
+    <h3 class="undertitle undertitle--white">This is a white undertitle</h3>
+    <h3 class="undertitle undertitle--orange">This is an orange undertitle</h3>
+    <p class="bodytext">This is a body text</p>
+    <p class="bodytext bodytext--white">This is a white body text</p>
+    <p class="bodytext bodytext--orange">This is an orange body text</p>
+    <section class="module" id="buttons">
+        <h2 class="titlestyle">Buttons</h2>
+    </section>
+        <button class="actionButton">Action Button</button>
+        <button class="actionButton actionButton--white">Action Button White</button>
+        <button class="actionButton actionButton--small">Small</button>
+        <p>Arrow Button:</p>
+        <button class="arrowButton"><img src="/assets/arrow_next.png"></button>
+        <p>Map Button:</p>
+        <button class="mapButton"><img src="/assets/map_icon.png"></button>
+        <button class="textbutton">
+            <a href="#">Text Button</a>
+        </button>
+        <button class="textbutton textbutton--white">
+            <a href="#">Text Button White</a>
+        </button>
+        <p>Back Arrow:</p>
+        <i class="fas fa-chevron-left" style="color: #ffffff;"></i>
+
+    <section class="module" id="module">
+        <h2 class="titlestyle">Modules</h2>
+    </section>
+    
+    <p>Top menu + Sidebar</p>
+
+    <nav class="sidebar">
+        <ul>
+            <li class="sidebar__item"><i class="fas fa-box-open"></i> Mine Pakker</li>
+        <li class="sidebar__item"><i class="fas fa-truck-loading"></i> Send en pakke</li>
+        <li class="sidebar__item"><i class="fas fa-undo-alt"></i> Send pakke retur</li>
+        <li class="sidebar__item"><i class="fas fa-clipboard-list"></i> Historik</li>
+        <li class="sidebar__item"><i class="fas fa-question-circle"></i>Sådan bruges Nærboks </li>
+        <li class="sidebar__item"><i class="fas fa-phone"></i> Kontakt kundeservice</li>
+        <li class="sidebar__item"><i class="fas fa-cog"></i> Indstillinger</li>
+    </ul>
+    </nav>
+    
+    <section class="closebutton">
+      <i class="fas fa-times"></i>
+    </section>
+    
+        <nav class="topmenu">
+              <i class="fa fa-bars openbutton"></i>
+          </nav>
+
+    <p>Input Fields</p>
+
+    <p class="inputField__caption">Pinkode</p>
+    <section class="inputField"><input class="textinput" type="text" name="pinkode"></section>
+
+    <section class="input">
+        <p class="inputField__caption">Telefonnummer</p>
+    <section class="inputField inputField--phone">
+        <p class="inputField__number">+45</p><input class="textinput" type="text" name="pinkode"></section>
+    </section>
+
+    <p>Slider container</p>
+    <div class="slider-container">
+        <div class="slide">
+            <h2>Trin 1</h2>
+            <img src="/assets/box.png" alt="box">
+            <h3>Beskrivelse af trin 1</h3>
+        </div>
+    </div>
+
+    <script src="/javascript/sidebar.js"></script>
+</body>
+</html>
