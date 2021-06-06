@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
+
+    <style>
+        body {
+            background-color: blueviolet;
+        }
+
+        .sidebar {
+            background-color: #1abbe7;
+            position: fixed;
+            top: 0;
+            left: -340px;
+            width: 340px;
+            height: 100%;
+            color: white;
+            padding-top: 50px;
+            z-index: 1;
+        }
+
+        .sidebar__item {
+            display: grid;
+            grid-template-columns: 1fr 5fr;
+            line-height: 60px;
+            align-items: center;
+            font-size: 20px;
+            gap: 20px;
+        }
+
+        .fas {
+            font-size: 24px;
+        }
+
+        .closebutton {
+            z-index: 2;
+            position: absolute;
+            color: white;
+            top: 15px;
+            left: -30px;
+        }
+
+        .closebutton .fas {
+            font-size: 30px;
+        }
+
+        .sidebar--open {
+            left: 0px;
+        }
+
+        .closebutton--open {
+            left: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p class="openbutton">Hello!</p>
+
+    <nav class="sidebar">
+        <ul>
+            <li class="sidebar__item"><i class="fas fa-box-open"></i> Mine Pakker</li>
+            <li class="sidebar__item"><i class="fas fa-truck-loading"></i> Send en pakke</li>
+            <li class="sidebar__item"><i class="fas fa-undo-alt"></i> Send pakke retur</li>
+            <li class="sidebar__item"><i class="fas fa-clipboard-list"></i> Historik</li>
+            <li class="sidebar__item"><i class="fas fa-question-circle"></i>Sådan bruges Nærboks </li>
+            <li class="sidebar__item"><i class="fas fa-phone"></i> Kontakt kundeservice</li>
+            <li class="sidebar__item"><i class="fas fa-cog"></i> Indstillinger</li>
+        </ul>
+    </nav>
+
+    <section id="closebutton" class="closebutton" onclick="closeNav()">
+        <i class="fas fa-times"></i>
+    </section>
+
+    <script>
+        const sidebar = document.querySelector(".sidebar");
+        const closebutton = document.querySelector(".closebutton");
+        const openbutton = document.querySelector(".openbutton");
+
+        console.log(sidebar);
+        console.log(openbutton);
+
+
+        openbutton.addEventListener('click', () => {
+            sidebar.classList.add('sidebar--open');
+            closebutton.classList.add('closebutton--open');
+        });
+
+        closebutton.addEventListener('click', () => {
+            sidebar.classList.remove('sidebar--open');
+            closebutton.classList.remove('closebutton--open');
+        });
+
+    </script>
+</body>
+
+</html>

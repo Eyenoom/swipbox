@@ -6,6 +6,7 @@ body {
     margin:0;
     text-align: center;
     background-color: #8dddf3;
+    font-family: "calibri";
 }
 
 a {
@@ -20,4 +21,12 @@ a {
 
 .swipbox {
     width: 100%;
+}
+
+.gradientBG {
+    background: rgb(141,221,243);
+background: linear-gradient(180deg, rgba(141,221,243,1) 0%, rgba(255,255,255,1) 100%);
+height: 100vh;
+top: 0px;
+z-index: 0;
 }
